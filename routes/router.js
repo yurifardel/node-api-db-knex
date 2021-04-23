@@ -1,12 +1,12 @@
 const express = require("express");
 
-const PeopleController = require("../lib/controllers/people/CreatePeople");
-const PageController = require("../lib/controllers/page/PageController");
+const PeopleController = require("../lib/controllers/CreatePeople");
+const PageController = require("../lib/controllers/PageController");
 
 const routes = express.Router();
 
-routes.post("/people", PeopleController.create);
-routes.get("/people", PeopleController.index);
+routes.post("/pessoa", PeopleController.create);
+routes.get("/pessoa", PeopleController.index);
 
 routes.post("/pagina", PageController.create);
 routes.get("/pagina", PageController.index);
